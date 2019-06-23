@@ -1,0 +1,40 @@
+.top_search_area {
+    background: #fff;
+    margin: 20px;
+    box-shadow: 2px 2px #cccccc;
+    border-radius: 5px;
+}
+._row {
+    display: inline-block;
+    margin: 0px 10px;
+}
+._row p {
+    display: table-cell;
+}
+._row >div{
+    display: table;
+}
+
+.search_button {
+    float: right;
+    margin: 20px;
+}
+.search_button button {
+    border-radius: 0;
+    padding: 13px 17px;
+    display: inline-block;
+    line-height: 0;
+
+}
+
+/* Middle Area */
+.middle_filter_area {
+    background: #fff;
+    margin: 20px;
+    box-shadow: 2px 2px #cccccc;
+    border-radius: 5px;
+}
+
+.jobs_shell{
+
+}

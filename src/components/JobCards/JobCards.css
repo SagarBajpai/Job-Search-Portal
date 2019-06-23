@@ -1,0 +1,62 @@
+._cards {
+    background: #fff;
+    margin: 20px;
+    box-shadow: 2px 2px #cccccc;
+    border-radius: 5px;
+    padding: 14px;
+    width: 590px;
+    position: relative;
+}
+
+._cards h5 {
+    font-size: 18px;
+}
+._cards  p {
+    font-size: 12px;
+    margin-top: -5px;
+    color: #dc3545;
+}
+
+.job_description {
+    margin-top: -10px;
+}
+.job_description div{
+    /* line-height: 0;
+    margin: 10px 0px; */
+    margin-bottom: -10px;
+}
+
+.job_description label{
+    color: #6b6b6b;
+    font-size: 12px;
+    width: 83px;
+}
+
+.job_description p{
+    font-size: 12.5px;
+    padding: 0px;
+    color: #000000;
+    display:inline-block;
+}
+
+.loc_label {
+    margin: 0 20px;
+}
+
+.apply_button {
+    bottom: 20px;
+    width: max-content;
+    right: 20px;
+    position: absolute;
+    color: #0a6cff;
+    cursor: pointer;
+}
+._outer{
+    display: inline-block;
+}
+
+@media only screen and (max-width:653px){
+    ._cards {
+       width: 88vw;
+    }
+}
