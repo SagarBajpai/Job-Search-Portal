@@ -75,6 +75,7 @@ class Home extends Component {
     }
 
     experienceFilter=(job)=>{
+        console.log('experienceFilter')
         const { selectedExperience, keywords } = this.state;
         if(job.experience !='' && job.experience !=null && job.experience != 'Fresher' && job.experience != 'Freshers'){
             let str = job.experience.trim().substring(0,job.experience.trim().lastIndexOf(' '));
@@ -125,6 +126,7 @@ class Home extends Component {
     }
 
     locationFilter=(job)=>{
+        // console.log('locationFilter')
         const { selectedLocation, keywords } = this.state;
         if(job.location.toLowerCase().indexOf(selectedLocation.toLowerCase())>-1){
             if(keywords!=''){
@@ -208,6 +210,7 @@ class Home extends Component {
                     if((selectedExperience.toString()) != '--Any--' || (selectedLocation != '--Any--')){
                         if(this.filter(job)){
                             totalResults++;
+
                             if(sortByLocation || sortByExperience){
                                 this.sortedJob(job,0);
                                 return
@@ -241,6 +244,7 @@ class Home extends Component {
                 });
             }
         if(sortByLocation || sortByExperience){
+            console.log('inside sort')
             sortedJob = this.sortedJob('',1);
             Jobs =  sortedJob.map((job, index)=>{
                 return  <JobCards 
@@ -309,7 +313,9 @@ class Home extends Component {
                     <p>Total Jobs Found : {totalResults}</p>
                 </div>
                 <div className="jobs_shell">
-                    {Jobs}
+                    {totalResults != 0 ? Jobs : 
+                    <p className='no_job'>Oops! No Job Found.</p>
+                    }
                 </div>
             </div>
         );

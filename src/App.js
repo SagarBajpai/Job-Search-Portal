@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import './App.css';
 import Home from './components/Home/Home';
-
+const OtherComponent = React.lazy(() => import('./components/Home/Home'));
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <OtherComponent />
+    </Suspense>
   );
 }
 

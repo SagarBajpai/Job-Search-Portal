@@ -70,6 +70,11 @@
     margin-top: 40px;
 }
 
+.no_job {
+    text-align: center;
+    color: #969696
+}
+
 @media only screen and (max-width: 692px){
     .sort_button{
         float: unset;
