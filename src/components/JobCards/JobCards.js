@@ -21,7 +21,7 @@ class JobCards extends Component {
                             <p  className='_experience'>{experience}</p>
                             <span className="loc_label">
                                 <label>Location : </label>
-                                <p>{location}</p>
+                                <p className="_location">{location}</p>
                             </span>
                         </div>
                         <div>

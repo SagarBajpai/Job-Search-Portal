@@ -10,21 +10,10 @@
 }
 ._row p {
     display: table-cell;
+    width: 85px;
 }
 ._row >div{
     display: table;
-}
-
-.search_button {
-    float: right;
-    margin: 20px;
-}
-.search_button button {
-    border-radius: 0;
-    padding: 13px 17px;
-    display: inline-block;
-    line-height: 0;
-
 }
 
 /* Middle Area */
@@ -35,6 +24,55 @@
     border-radius: 5px;
 }
 
-.jobs_shell{
+.sort_button{
+    float: right;
+    margin: 20px;
+}
+.sort_button > div{
+    width: max-content
+}
 
+.sort_button button{
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    padding: 0.3125rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid #006aff;
+    color: #006aff;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+}
+.sort_button p{
+    display: inline-block;
+}
+
+.total_results {
+    font-size: 13px;
+    margin: 0px 15px;
+    padding: 0px 13px;
+}
+
+.total_results p {
+    float: right;
+    margin-bottom: 0;
+}
+
+.jobs_shell{
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 692px){
+    .sort_button{
+        float: unset;
+        margin: 15px;
+    }
 }
