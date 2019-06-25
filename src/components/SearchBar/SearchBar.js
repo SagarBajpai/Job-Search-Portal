@@ -4,13 +4,13 @@ import Select from "react-select";
 
 class SearchBar extends Component {
   render() {
-    const {values, onChange, placeholder } = this.props;
+    const { values, onChange, placeholder } = this.props;
     return (
       <div className="search">
-        <input 
-          className='form-control'
+        <input
+          className="form-control"
           onChange={onChange}
-          placeholder ={placeholder}
+          placeholder={placeholder}
         />
       </div>
     );
@@ -18,7 +18,7 @@ class SearchBar extends Component {
 }
 
 SearchBar.defaultProps = {
-  placeholder:'Search'
-}
+  placeholder: "Search"
+};
 
 export default SearchBar;

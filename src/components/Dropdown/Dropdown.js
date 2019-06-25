@@ -4,21 +4,17 @@ import Select from "react-select";
 
 class Dropdown extends Component {
   render() {
-    const {values, onChange } = this.props;
+    const { values, onChange } = this.props;
     return (
       <div className="select">
-        <Select 
-          options={values} 
-          onChange={onChange}
-          placeholder ={'--Any--'}
-        />
+        <Select options={values} onChange={onChange} placeholder={"--Any--"} />
       </div>
     );
   }
 }
 
 Dropdown.defaultProps = {
-  placeholder:'Search'
-}
+  placeholder: "Search"
+};
 
 export default Dropdown;
