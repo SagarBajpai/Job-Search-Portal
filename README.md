@@ -1,4 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Layout
+![](public/pic_2.png)
+
+## Live Demo
+https://thawing-reaches-36620.herokuapp.com/
 
 ## Available Scripts
 
